@@ -1,5 +1,9 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
+import Didem from './images/didem-namver.webp';
+import Emre from './images/emre-baykal.webp';
+import Mehmet from './images/mehmet-little-caesers-bw.webp';
+import Murat from './images/murat-ozkan.webp';
 import Rand from './images/rand-fishkin.webp';
 
 const ButtonStyles = css`
@@ -8,6 +12,11 @@ const ButtonStyles = css`
   border-radius: 20px;
   color: white;
   text-decoration: none;
+  vertical-align: middle;
+  transition: 0.2s ease;
+  height: 20px;
+  align-self: center;
+  margin-right: 70px;
 
   :hover {
     background-color: #a30046;
@@ -16,7 +25,7 @@ const ButtonStyles = css`
 
 const slideshowContainerStyles = css`
   position: relative;
-  margin: 0 40px 40px 40px;
+  margin: 0 0px 40px 25px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -31,7 +40,7 @@ const nameStyles = css`
   grid-template-areas:
     'image customer'
     'image position';
-  margin-right: 80px;
+  margin-right: 90px;
 `;
 
 const imgStyles = css`
@@ -44,7 +53,7 @@ const customerNameStyles = css`
   grid-area: customer;
   font-size: 18px;
   font-weight: 600;
-  margin: 0;
+  margin-top: 7px;
   padding: 0;
   text-align: left;
 `;
@@ -54,32 +63,37 @@ const positionStyles = css`
   font-size: 12px;
   font-weight: 300;
   margin: 0;
-  margin-top: -20px;
+  margin-top: -40px;
   padding: 0;
   text-align: left;
 `;
 
 const referenceStyles = css`
-  width: 450px;
+  width: 420px;
   text-align: left;
   font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+  margin: 0;
 `;
 
 const arrowButtonStyles = css`
   display: flex;
 `;
 
-const nextButtonStyles = css`
-  border: none;
-  font-size: 30px;
-  background-color: #e8ecf2;
-  margin-left: 40px;
-`;
-
 const previousButtonStyles = css`
   border: none;
   font-size: 30px;
-  background-color: #e8ecf2;
+  background-color: #fff;
+  user-select: none;
+`;
+
+const nextButtonStyles = css`
+  border: none;
+  font-size: 30px;
+  background-color: #fff;
+  margin-left: 70px;
+  user-select: none;
 `;
 
 export function References() {
@@ -99,10 +113,12 @@ export function References() {
         </div>
       </div>
       <div css={slidesStyles}>
-        <div>
-          <img src="" alt="Didem Namver" />
-          <h5>Didem Namver</h5>
-          <h6>Head of Digital Marketing &amp; eCommerce - Pepsico</h6>
+        <div css={nameStyles}>
+          <img css={imgStyles} src={Didem} alt="Didem Namver" />
+          <h5 css={customerNameStyles}>Didem Namver</h5>
+          <h6 css={positionStyles}>
+            Head of Digital Marketing &amp; eCommerce - Pepsico
+          </h6>
         </div>
         <p>
           At Zeo, we are in contact with a team of experts who follow their work
@@ -111,10 +127,10 @@ export function References() {
         </p>
       </div>
       <div css={slidesStyles}>
-        <div>
-          <img src="" alt="Murat Özkan" />
-          <h5>Murat Özkan</h5>
-          <h6>Head of E-commerce at GrandVision Turkey</h6>
+        <div css={nameStyles}>
+          <img css={imgStyles} src={Murat} alt="Murat Özkan" />
+          <h5 css={customerNameStyles}>Murat Özkan</h5>
+          <h6 css={positionStyles}>Head of E-commerce at GrandVision Turkey</h6>
         </div>
         <p>
           While developing an e-commerce site instead of our old corporate
@@ -124,10 +140,10 @@ export function References() {
         </p>
       </div>
       <div css={slidesStyles}>
-        <div>
-          <img src="" alt="Mehmet Günden" />
-          <h5>Mehmet Günden</h5>
-          <h6>E-Commerce Manager - Little Caesers</h6>
+        <div css={nameStyles}>
+          <img css={imgStyles} src={Mehmet} alt="Mehmet Günden" />
+          <h5 css={customerNameStyles}>Mehmet Günden</h5>
+          <h6 css={positionStyles}>E-Commerce Manager - Little Caesers</h6>
         </div>
         <p>
           Among the prominent features of Zeo is that they are always
@@ -138,10 +154,12 @@ export function References() {
         </p>
       </div>
       <div css={slidesStyles}>
-        <div>
-          <img src="" alt="Emre Baykal" />
-          <h5>Emre Baykal</h5>
-          <h6>Director of Digital Marketing - Acibadem Healthcare Group</h6>
+        <div css={nameStyles}>
+          <img css={imgStyles} src={Emre} alt="Emre Baykal" />
+          <h5 css={customerNameStyles}>Emre Baykal</h5>
+          <h6 css={positionStyles}>
+            Director of Digital Marketing - Acibadem Healthcare Group
+          </h6>
         </div>
         <p>
           The Zeo team has become a stakeholder in success by looking at our

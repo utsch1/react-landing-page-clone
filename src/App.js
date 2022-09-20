@@ -1,8 +1,11 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
+import { Awards } from './Awards.js';
+import { Conference } from './Conference.js';
 import hero from './images/homepage-hero.svg';
 import logo from './images/zeo-logo.svg';
 import { References } from './References.js';
+import { Services } from './Services.js';
 
 const headerStyles = css`
   display: flex;
@@ -13,6 +16,7 @@ const headerStyles = css`
   background-color: #fff;
   padding: 20px 20px 20px 65px;
   position: fixed;
+  z-index: 1;
 
   nav > a {
     margin-left: 20px;
@@ -34,23 +38,23 @@ const headerStyles = css`
 `;
 
 const mainStyles = css`
-  background-color: #e8ecf2;
+  background-color: #fff;
 `;
 
-const HeadlineDivStyles = css`
+const headlineDivStyles = css`
   width: 700px;
   height: auto;
   margin: 0 auto;
   color: #012535;
 `;
 
-const InfoStyles = css`
+const infoStyles = css`
   font-weight: 600;
   font-size: 18px;
   padding-top: 140px;
 `;
 
-const HeadlineStyles = css`
+const headlineStyles = css`
   font-size: 50px;
   font-weight: bold;
   line-height: 60px;
@@ -61,6 +65,7 @@ const textStyles = css`
   line-height: 24px;
   margin-top: 20px;
   margin-bottom: 30px;
+  font-weight: 300;
 `;
 
 const lineStyles = css`
@@ -70,12 +75,13 @@ const lineStyles = css`
   border: 0;
 `;
 
-const ButtonStyles = css`
+const buttonStyles = css`
   padding: 10px 30px;
   background-color: #cc0a4d;
   border-radius: 20px;
   color: white;
   text-decoration: none;
+  transition: 0.2s ease;
 
   :hover {
     background-color: #a30046;
@@ -107,11 +113,11 @@ function App() {
       </header>
 
       <main css={mainStyles}>
-        <div css={HeadlineDivStyles}>
-          <div css={InfoStyles}>
+        <div css={headlineDivStyles}>
+          <div css={infoStyles}>
             Winner of the UK &amp; EU &amp; MENA Search Awards
           </div>
-          <div css={HeadlineStyles}>
+          <div css={headlineStyles}>
             Tailor-made strategies to maximize your results
           </div>
           <hr css={lineStyles} />
@@ -122,13 +128,19 @@ function App() {
             startups, and internet companies prefer to work with us to fulfill
             their digital potential.
           </div>
-          <a href="link" css={ButtonStyles}>
+          <a href="link" css={buttonStyles}>
             See our success stories
           </a>
         </div>
         <img css={imageStyles} src={hero} alt="" />
 
         <References />
+
+        <Services />
+
+        <Awards />
+
+        <Conference />
         <br />
         <br />
         <br />
