@@ -2,6 +2,7 @@
 import { css } from '@emotion/react';
 import hero from './images/homepage-hero.svg';
 import logo from './images/zeo-logo.svg';
+import { References } from './References.js';
 
 const headerStyles = css`
   display: flex;
@@ -33,7 +34,7 @@ const headerStyles = css`
 `;
 
 const mainStyles = css`
-  background-color: #d2d5db;
+  background-color: #e8ecf2;
 `;
 
 const HeadlineDivStyles = css`
@@ -83,6 +84,7 @@ const ButtonStyles = css`
 
 const imageStyles = css`
   display: block;
+  margin-bottom: 70px;
 `;
 
 function App() {
@@ -125,80 +127,20 @@ function App() {
           </a>
         </div>
         <img css={imageStyles} src={hero} alt="" />
-        {/* first carousel */}
-        <div>
-          <div>
-            <div>
-              <img src="" alt="Rand Fishkin" />
-              <h5>Rand Fishkin</h5>
-              <h6>Founder - Moz &amp; SparkToro</h6>
-            </div>
-            <p>
-              The Digitalzone conference organized by Zeo was one of the most
-              interesting experiences of my life, both as a speaker and as a
-              listener. The participants, the content, the venue and the
-              interest of the organizers showed that this was an event not to be
-              missed.
-            </p>
-          </div>
-          <div>
-            <div>
-              <img src="" alt="Didem Namver" />
-              <h5>Didem Namver</h5>
-              <h6>Head of Digital Marketing &amp; eCommerce - Pepsico</h6>
-            </div>
-            <p>
-              At Zeo, we are in contact with a team of experts who follow their
-              work closely and respond quickly and clearly to the needs. They
-              always take us one step further with their proactive suggestions
-              and actions.
-            </p>
-          </div>
-          <div>
-            <div>
-              <img src="" alt="Murat Özkan" />
-              <h5>Murat Özkan</h5>
-              <h6>Head of E-commerce at GrandVision Turkey</h6>
-            </div>
-            <p>
-              While developing an e-commerce site instead of our old corporate
-              website, we agreed with Zeo for site migration and all subsequent
-              SEO activities. As of 2018, we are in the 1st place in 250 of the
-              500 highest-volume words we follow and on the first page in 483.
-            </p>
-          </div>
-          <div>
-            <div>
-              <img src="" alt="Mehmet Günden" />
-              <h5>Mehmet Günden</h5>
-              <h6>E-Commerce Manager - Little Caesers</h6>
-            </div>
-            <p>
-              Among the prominent features of Zeo is that they are always
-              solution-oriented and provide fast solutions. The analyzes,
-              solutions and reports they share are always very satisfying and
-              guiding. Since they always closely follow the technology and the
-              trends in their fields, you can get answers to your questions as
-              quickly as possible.
-            </p>
-          </div>
-          <div>
-            <div>
-              <img src="" alt="Emre Baykal" />
-              <h5>Emre Baykal</h5>
-              <h6>Director of Digital Marketing - Acibadem Healthcare Group</h6>
-            </div>
-            <p>
-              The Zeo team has become a stakeholder in success by looking at our
-              optimization processes and our brand as their own value. We would
-              like to thank all the Zeo team, who constantly improve and do not
-              compromise on keeping their energies high under all conditions!
-            </p>
-          </div>
-          <a href="link" css={ButtonStyles}>
-            Contact us
-          </a>
-        </div>
+
+        <References />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
       </main>
     </div>
   );
