@@ -34,6 +34,7 @@ const lineStyles = css`
 
 const awardsDivStyles = css`
   width: 550px;
+  height: 700px;
   margin: 0 400px 30px 70px;
 `;
 
@@ -81,7 +82,7 @@ const nextButtonStyles = css`
 
 const worldImageStyles = css`
   position: relative;
-  left: 633px;
+  left: 630px;
   bottom: 700px;
 `;
 

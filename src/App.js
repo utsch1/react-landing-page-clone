@@ -1,10 +1,13 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 import { Awards } from './Awards.js';
+import { CaseStudies } from './CaseStudies.js';
 import { Conference } from './Conference.js';
 import hero from './images/homepage-hero.svg';
 import logo from './images/zeo-logo.svg';
+import { Logos } from './Logos.js';
 import { References } from './References.js';
+import { Resources } from './Resources.js';
 import { Services } from './Services.js';
 
 const headerStyles = css`
@@ -141,16 +144,14 @@ function App() {
         <Awards />
 
         <Conference />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+
+        <CaseStudies />
+        <hr css={lineStyles} />
+
+        <Logos />
+
+        <Resources />
+
         <br />
         <br />
       </main>
