@@ -25,6 +25,8 @@ const infoStyles = css`
   font-size: 18px;
   text-align: left;
   line-height: 46px;
+  margin: 0;
+  padding: 0;
 `;
 
 const headline2Styles = css`
@@ -32,6 +34,8 @@ const headline2Styles = css`
   font-weight: bold;
   line-height: 30px;
   text-align: left;
+  margin-top: 0;
+  padding-top: 0;
 `;
 
 const lineStyles = css`
@@ -57,12 +61,16 @@ const latestWorkStyles = css`
   font-weight: 300;
   font-size: 18px;
   text-align: right;
+  margin: 0;
+  padding: 0;
 `;
 
 const ourReferencesStyles = css`
   font-weight: 600;
   font-size: 18px;
   text-align: right;
+  margin: 0;
+  padding: 0;
 `;
 
 const boxDivStyles = css`
@@ -103,6 +111,8 @@ const marketingServicesHeaderStyles1 = css`
   font-weight: 300;
   line-height: 30px;
   text-align: left;
+  margin: 0;
+  padding: 0;
 `;
 
 const marketingServicesHeaderStyles2 = css`
@@ -111,7 +121,8 @@ const marketingServicesHeaderStyles2 = css`
   font-weight: 500;
   line-height: 30px;
   text-align: left;
-  margin-bottom: 10px;
+  margin: 0;
+  padding: 0;
 `;
 
 const iconStyles = css`
@@ -125,7 +136,8 @@ const descriptionStyles = css`
   font-weight: 300;
   font-size: 13px;
   line-height: 20px;
-  margin: 0;
+  margin-top: 10px;
+  padding: 0;
 `;
 
 const arrowButtonStyles = css`
@@ -153,64 +165,60 @@ export function Services() {
     <section>
       <div css={servicesDivStyles}>
         <div css={servicesDescriptionStyles}>
-          <div css={infoStyles}>What can we do for you?</div>
-          <div css={headline2Styles}>Our services</div>
+          <h3 css={infoStyles}>What can we do for you?</h3>
+          <h2 css={headline2Styles}>Our services</h2>
           <hr css={lineStyles} />
-          <div css={textStyles}>
+          <p css={textStyles}>
             We bring the 'technical' and 'creative' together <br /> while
             serving our core fundamental services.
-          </div>
+          </p>
         </div>
         <div css={referencesStyles}>
-          <div css={latestWorkStyles}>See our latest works</div>
-          <div css={ourReferencesStyles}>Our References</div>
+          <p css={latestWorkStyles}>See our latest works</p>
+          <h3 css={ourReferencesStyles}>Our References</h3>
         </div>
       </div>
       <div css={boxDivStyles}>
         <div css={boxStyles}>
           <img css={serviceImageStyles} src={seoImage} alt="" />
           <div css={serviceDivStyles}>
-            <div css={marketingServicesHeaderStyles1}>Search Engine</div>
-            <div css={marketingServicesHeaderStyles2}>Optimization (SEO)</div>
+            <h3 css={marketingServicesHeaderStyles1}>Search Engine</h3>
+            <h3 css={marketingServicesHeaderStyles2}>Optimization (SEO)</h3>
             <img css={iconStyles} src={seoIcon} alt="" />
-            <div css={descriptionStyles}>
+            <p css={descriptionStyles}>
               Websites with millions of monthly traffic choose us to develop
               their SEO strategies.
-            </div>
+            </p>
           </div>
         </div>
         <div css={boxStyles}>
           <img css={serviceImageStyles} src={cmImage} alt="" />
           <div css={serviceDivStyles}>
-            <div css={marketingServicesHeaderStyles1}>Content</div>
-            <div css={marketingServicesHeaderStyles2}>Marketing</div>
+            <h3 css={marketingServicesHeaderStyles1}>Content</h3>
+            <h3 css={marketingServicesHeaderStyles2}>Marketing</h3>
             <img css={iconStyles} src={cmIcon} alt="" />
-            <div css={descriptionStyles}>
+            <p css={descriptionStyles}>
               We combine large keyword analysis with creativity to define
               content creating strategy.
-            </div>
+            </p>
           </div>
         </div>
         <div css={boxStyles}>
           <img css={serviceImageStyles} src={ppcImage} alt="" />
           <div css={serviceDivStyles}>
-            <div css={marketingServicesHeaderStyles1}>Performance</div>
-            <div css={marketingServicesHeaderStyles2}>Marketing (PPC)</div>
+            <h3 css={marketingServicesHeaderStyles1}>Performance</h3>
+            <h3 css={marketingServicesHeaderStyles2}>Marketing (PPC)</h3>
             <img css={iconStyles} src={ppcIcon} alt="" />
-            <div css={descriptionStyles}>
+            <p css={descriptionStyles}>
               Finding the sweet spot of cost and performance to increase ROAS
               and make campaigns scalable.
-            </div>
+            </p>
           </div>
         </div>
       </div>
       <div css={arrowButtonStyles}>
-        <button css={previousButtonStyles} onclick="plusSlides(-1)">
-          &#10094;
-        </button>
-        <button css={nextButtonStyles} onclick="plusSlides(1)">
-          &#10095;
-        </button>
+        <button css={previousButtonStyles}>&#10094;</button>
+        <button css={nextButtonStyles}>&#10095;</button>
       </div>
     </section>
   );

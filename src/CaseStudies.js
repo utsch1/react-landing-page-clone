@@ -4,8 +4,6 @@ import Decathlon from './images/decathlon.svg';
 import Hyundai from './images/hyundai.svg';
 import MediaMarkt from './images/media-markt.svg';
 
-// import Generali from './images/generali.svg';
-
 const sectionStyles = css`
   position: static;
   margin-top: 100px;
@@ -31,6 +29,8 @@ const headlineStyles = css`
   font-weight: bold;
   line-height: 40px;
   text-align: left;
+  margin: 0;
+  padding: 0;
 `;
 
 const conferenceSubheaderStyles = css`
@@ -38,6 +38,8 @@ const conferenceSubheaderStyles = css`
   font-size: 16px;
   text-align: left;
   margin-bottom: 10px;
+  margin-top: 0;
+  padding: 0;
 `;
 
 const textStyles = css`
@@ -54,9 +56,6 @@ const boxStyles = css`
   border-radius: 2px;
   border: 1px solid #e8ecf2;
   margin: 16px;
-  :hover {
-    box-shadow: 0 12px 24px 0 rgba(175, 184, 202, 0.2);
-  }
 `;
 
 const caseStudyStyles = css`
@@ -110,22 +109,18 @@ export function CaseStudies() {
       <div>
         <div css={conferenceDivStyles}>
           <div css={conferenceStyles}>
-            <div css={conferenceSubheaderStyles}>References &amp;</div>
-            <div css={headlineStyles}>Case Studies</div>
+            <h3 css={conferenceSubheaderStyles}>References &amp;</h3>
+            <h2 css={headlineStyles}>Case Studies</h2>
             <hr css={lineStyles} />
-            <div css={textStyles}>
+            <p css={textStyles}>
               We are providing our proficiency to have the best results in our
               clients' industries.
-            </div>
+            </p>
           </div>
         </div>
         <div css={arrowButtonStyles}>
-          <button css={previousButtonStyles} onclick="plusSlides(-1)">
-            &#10094;
-          </button>
-          <button css={nextButtonStyles} onclick="plusSlides(1)">
-            &#10095;
-          </button>
+          <button css={previousButtonStyles}>&#10094;</button>
+          <button css={nextButtonStyles}>&#10095;</button>
         </div>
       </div>
       <div css={boxDivStyles}>
@@ -152,16 +147,6 @@ export function CaseStudies() {
           </div>
           <img src={MediaMarkt} alt="" />
         </div>
-        {/* <div css={boxStyles}>
-          <div>
-            <div css={caseStudyStyles}>Generali SEO Case Study</div>
-            <div css={sloganStyles}>
-              93% Increase in Organic Traffic and 100% Increase in SEO
-              Visibility
-            </div>
-          </div>
-          <img src={Generali} alt="" />
-        </div> */}
       </div>
     </section>
   );

@@ -1,8 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 import Conference22 from './images/conference-22.webp';
-
-// import Event from './images/event-europa-full.webp';
+import Event from './images/event-europa-full.webp';
 
 const backgroundDivStyles = css`
   background-color: #f5f8fc;
@@ -34,6 +33,8 @@ const headlineStyles = css`
   font-weight: bold;
   line-height: 40px;
   text-align: left;
+  margin: 0;
+  padding: 0;
 `;
 
 const conferenceSubheaderStyles = css`
@@ -41,6 +42,8 @@ const conferenceSubheaderStyles = css`
   font-size: 16px;
   text-align: left;
   margin-bottom: 10px;
+  margin-top: 0;
+  padding: 0;
 `;
 
 const lineStyles = css`
@@ -74,15 +77,15 @@ const buttonStyles = css`
   }
 `;
 
-// const eventDivStyles = css`
-//   position: relative;
-//   bottom: 50px;
-//   left: 100px;
-// `;
+const eventDivStyles = css`
+  position: relative;
+  bottom: 380px;
+  left: 550px;
+`;
 
-// const eventImgStyles = css`
-//   width: 150%;
-// `;
+const eventImgStyles = css`
+  width: 130%;
+`;
 
 export function Conference() {
   return (
@@ -93,33 +96,33 @@ export function Conference() {
             <img src={Conference22} alt="" />
           </div>
           <div css={conferenceStyles}>
-            <div css={conferenceSubheaderStyles}>
+            <h4 css={conferenceSubheaderStyles}>
               Digitalzone brings top marketing professionals since 2013
-            </div>
-            <div css={headlineStyles}>
+            </h4>
+            <h2 css={headlineStyles}>
               Largest Digital Marketing Conference of Eastern <br /> Europe
               &amp; MENA
-            </div>
+            </h2>
             <hr css={lineStyles} />
-            <div css={textStyles}>
-              We organize Digitalzone conference since 2013 to bring the
-              brightest minds of digital marketing, like Rand Fishkin, Wil
-              Reynolds, Aleyda Solis and Brian Dean with Europe's digital
+            <p css={textStyles}>
+              We organize <strong>Digitalzone</strong> conference since 2013 to
+              bring the brightest minds of digital marketing, like Rand Fishkin,
+              Wil Reynolds, Aleyda Solis and Brian Dean with Europe's digital
               marketing community together. <br />
               It is not only a conference but also a monthly meetup where people
               can share new insights with others. Proudly speaking, we have
               reached more than 50K+ marketers within 10 years and learned
               together to be better marketers.
-            </div>
+            </p>
           </div>
           <div>
             <a href="link" css={buttonStyles}>
               View more
             </a>
           </div>
-          {/* <div css={eventDivStyles}>
+          <div css={eventDivStyles}>
             <img css={eventImgStyles} src={Event} alt="" />
-          </div> */}
+          </div>
         </div>
       </div>
     </section>

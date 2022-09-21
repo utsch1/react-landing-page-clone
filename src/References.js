@@ -6,7 +6,7 @@ import Mehmet from './images/mehmet-little-caesers-bw.webp';
 import Murat from './images/murat-ozkan.webp';
 import Rand from './images/rand-fishkin.webp';
 
-const ButtonStyles = css`
+const buttonStyles = css`
   padding: 10px 30px;
   background-color: #cc0a4d;
   border-radius: 20px;
@@ -86,6 +86,7 @@ const previousButtonStyles = css`
   font-size: 30px;
   background-color: #fff;
   user-select: none;
+  color: #d2d5db;
 `;
 
 const nextButtonStyles = css`
@@ -105,12 +106,12 @@ export function References() {
           <h5 css={customerNameStyles}>Rand Fishkin</h5>
           <h6 css={positionStyles}>Founder - Moz &amp; SparkToro</h6>
         </div>
-        <div css={referenceStyles}>
+        <p css={referenceStyles}>
           The Digitalzone conference organized by Zeo was one of the most
           interesting experiences of my life, both as a speaker and as a
           listener. The participants, the content, the venue and the interest of
           the organizers showed that this was an event not to be missed.
-        </div>
+        </p>
       </div>
       <div css={slidesStyles}>
         <div css={nameStyles}>
@@ -176,7 +177,7 @@ export function References() {
           &#10095;
         </button>
       </div>
-      <a href="link" css={ButtonStyles}>
+      <a href="link" css={buttonStyles}>
         Contact us
       </a>
     </div>

@@ -2,12 +2,13 @@
 import { css } from '@emotion/react';
 import Amazon from './images/amazon.webp';
 import Bayer from './images/bayer.webp';
+import bmw from './images/bmw.webp';
 import Pepsico from './images/pepsico.webp';
 
 const logosStyles = css`
   display: flex;
   align-items: center;
-  margin: 50px 100px;
+  margin: 100px 200px;
 `;
 
 const previousButtonStyles = css`
@@ -15,6 +16,8 @@ const previousButtonStyles = css`
   font-size: 30px;
   background-color: #fff;
   user-select: none;
+  color: #d2d5db;
+  margin-right: 70px;
 `;
 
 const nextButtonStyles = css`
@@ -30,22 +33,25 @@ const logoDivStyles = css`
 `;
 
 const logoImgStyles = css`
-  width: 70%;
+  width: 80%;
+  filter: grayscale(1);
+
+  :hover {
+    filter: none;
+  }
 `;
 
 export function Logos() {
   return (
     <div css={logosStyles}>
       <div>
-        <button css={previousButtonStyles} onclick="plusSlides(-1)">
-          &#10094;
-        </button>
+        <button css={previousButtonStyles}>&#10094;</button>
       </div>
       <div css={logoDivStyles}>
         <img css={logoImgStyles} src={Amazon} alt="Amazon" />
       </div>
       <div css={logoDivStyles}>
-        <img css={logoImgStyles} src={Bayer} alt="BMW" />
+        <img css={logoImgStyles} src={bmw} alt="BMW" />
       </div>
       <div css={logoDivStyles}>
         <img css={logoImgStyles} src={Pepsico} alt="Pepsico" />
@@ -54,9 +60,7 @@ export function Logos() {
         <img css={logoImgStyles} src={Bayer} alt="Bayer" />
       </div>
       <div>
-        <button css={nextButtonStyles} onclick="plusSlides(1)">
-          &#10095;
-        </button>
+        <button css={nextButtonStyles}>&#10095;</button>
       </div>
     </div>
   );

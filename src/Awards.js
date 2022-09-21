@@ -7,6 +7,7 @@ const awardsStyles = css`
   position: relative;
   margin: 150px 80px 40px 80px;
   padding: 0;
+  width: 100vw;
 `;
 
 const infoStyles = css`
@@ -15,6 +16,8 @@ const infoStyles = css`
   text-align: left;
   line-height: 46px;
   margin-top: 70px;
+  margin-bottom: 0;
+  padding-bottom: 0;
 `;
 
 const headline2Styles = css`
@@ -22,6 +25,8 @@ const headline2Styles = css`
   font-weight: bold;
   line-height: 40px;
   text-align: left;
+  margin: 0;
+  padding: 0;
 `;
 
 const lineStyles = css`
@@ -70,6 +75,7 @@ const previousButtonStyles = css`
   font-size: 30px;
   background-color: #fff;
   user-select: none;
+  color: #d2d5db;
 `;
 
 const nextButtonStyles = css`
@@ -90,21 +96,21 @@ export function Awards() {
   return (
     <section>
       <div css={awardsStyles}>
-        <div css={infoStyles}>
+        <h3 css={infoStyles}>
           Every new client is an opportunity for having another award
-        </div>
-        <div css={headline2Styles}>
+        </h3>
+        <h2 css={headline2Styles}>
           Recognized by industry&#39;s best <br /> minds
-        </div>
+        </h2>
         <hr css={lineStyles} />
       </div>
       <div css={awardsDivStyles}>
         <img src={EuropeanSearchAwards} alt="European Search Awards" />
-        <div css={awardHeaderStyles}>Best SEO Campaign (Low Budget)</div>
-        <div css={awardSubheaderStyles}>
+        <h3 css={awardHeaderStyles}>Best SEO Campaign (Low Budget)</h3>
+        <h4 css={awardSubheaderStyles}>
           News &amp; Discover Boosting the Traffic!
-        </div>
-        <div css={textStyles}>
+        </h4>
+        <p css={textStyles}>
           We won the Best Low Budget Campaign (SEO) award for our work for
           Ajansspor at the European Search Awards 2022 where the best companies
           specializing in PPC, SEO, and Content Marketing in various sectors are
@@ -112,14 +118,10 @@ export function Awards() {
           Ajansspor, which has hundreds of thousands of pages, and complied with
           all the content guidelines that Google offers specifically for news
           sites.
-        </div>
+        </p>
         <div css={arrowButtonStyles}>
-          <button css={previousButtonStyles} onclick="plusSlides(-1)">
-            &#10094;
-          </button>
-          <button css={nextButtonStyles} onclick="plusSlides(1)">
-            &#10095;
-          </button>
+          <button css={previousButtonStyles}>&#10094;</button>
+          <button css={nextButtonStyles}>&#10095;</button>
         </div>
         <div css={worldImageStyles}>
           <img src={World} alt="" />
