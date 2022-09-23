@@ -1,3 +1,3 @@
 # Landing Page Clone with React
 
-Cloning parts a landing page
+Cloning parts of a landing page
