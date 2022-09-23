@@ -170,10 +170,10 @@ export function References() {
         </p>
       </div>
       <div css={arrowButtonStyles}>
-        <button css={previousButtonStyles} onclick="plusSlides(-1)">
+        <button css={previousButtonStyles}>
           &#10094;
         </button>
-        <button css={nextButtonStyles} onclick="plusSlides(1)">
+        <button css={nextButtonStyles}>
           &#10095;
         </button>
       </div>
