@@ -170,12 +170,8 @@ export function References() {
         </p>
       </div>
       <div css={arrowButtonStyles}>
-        <button css={previousButtonStyles}>
-          &#10094;
-        </button>
-        <button css={nextButtonStyles}>
-          &#10095;
-        </button>
+        <button css={previousButtonStyles}>&#10094;</button>
+        <button css={nextButtonStyles}>&#10095;</button>
       </div>
       <a href="link" css={buttonStyles}>
         Contact us
