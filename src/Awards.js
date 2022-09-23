@@ -90,6 +90,9 @@ const worldImageStyles = css`
   position: relative;
   left: 630px;
   bottom: 700px;
+  overflow: hidden;
+  width: 580px;
+  margin: 0;
 `;
 
 export function Awards() {

@@ -4,6 +4,7 @@ import { Awards } from './Awards.js';
 import { CaseStudies } from './CaseStudies.js';
 import { Conference } from './Conference.js';
 import hero from './images/homepage-hero.svg';
+import SiteMenu from './images/site-menu-image.svg';
 import logo from './images/zeo-logo.svg';
 import { Logos } from './Logos.js';
 import { References } from './References.js';
@@ -14,14 +15,12 @@ const headerStyles = css`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 99vw;
+  width: 85vw;
   height: 40px;
   background-color: #fff;
-  padding: 30px 20px 20px 65px;
+  padding: 30px 90px 20px 100px;
   position: fixed;
   z-index: 1;
-  margin-left: 40px;
-  margin-right: 40px;
 
   nav {
     margin-left: 300px;
@@ -30,6 +29,10 @@ const headerStyles = css`
     margin-left: 20px;
     text-decoration: none;
     color: #000;
+  }
+
+  nav > img {
+    margin-left: 35px;
   }
 `;
 
@@ -121,6 +124,7 @@ function App() {
           <a href="link" css={languageStyles}>
             TR
           </a>
+          <img src={SiteMenu} alt="site menu" />
         </nav>
       </header>
 
