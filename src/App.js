@@ -8,7 +8,6 @@ import SiteMenu from './images/site-menu-image.svg';
 import logo from './images/zeo-logo.svg';
 import { Logos } from './Logos.js';
 import { References } from './References.js';
-import { Resources } from './Resources.js';
 import { Services } from './Services.js';
 
 const headerStyles = css`
@@ -162,11 +161,6 @@ function App() {
         <hr css={lineStyles} />
 
         <Logos />
-
-        <Resources />
-
-        <br />
-        <br />
       </main>
     </div>
   );
